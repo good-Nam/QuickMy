@@ -1,6 +1,6 @@
 import copy
 arr = [6,6,6,6,6,6,6]
-# arr = [8,43,2,44,5,66,-12,10,50,1]
+arr1 = [8,43,2,44,5,66,-12,10,50,1]
 
 def partition (arr : list , left : int, right : int):
     l = left
@@ -26,6 +26,8 @@ def QuickSort(arr : list , l : int, r : int ):
         QuickSort(arr, k+1, r)
 
 QuickSort(arr,0,len(arr)-1)
+QuickSort(arr1,0,len(arr1)-1)
 
 
-print(arr) #[-12, 1, 2, 5, 8, 10, 43, 44, 50, 66]
+print(arr) #[6,6,6,6,6,6,6]
+print(arr1) #[-12, 1, 2, 5, 8, 10, 43, 44, 50, 66]
